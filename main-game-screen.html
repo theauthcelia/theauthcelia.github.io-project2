@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>main game page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Manrope:wght@200..800&family=Marhey:wght@300..700&family=Martel:wght@200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="big-container">
+        <h2>Let's play together!</h2>
+        <section class="input-form">
+          <section>
+            <p id="attempts-display">Attempts: 0</p>
+          </section>
+          <input
+            type="number"
+            id="guess-input"
+            placeholder="Enter a number from 1-100"
+          />
+          <p id="result-message">
+            Wellcome to guess the number, type in a number from 1 to 100 to play
+          </p>
+          <button
+            class="main-button-style"
+            id="submit-button"
+            onclick="startGame()"
+          >
+            Submit Guess
+          </button>
+          <button
+            class="main-button-style"
+            id="hidden-button"
+            href="index.html"
+            onclick="resetGame()"
+          >
+            Play Again
+          </button>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <h2>This page was made with love by Minh :3</h2>
+    </footer>
+    <script src="interaction.js"></script>
+  </body>
+</html>
